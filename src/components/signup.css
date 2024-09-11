@@ -1,0 +1,10 @@
+.signup-background {
+    background-image: url('https://s3-prod.autonews.com/s3fs-public/SDV-Automotive.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
