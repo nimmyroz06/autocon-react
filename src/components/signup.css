@@ -1,10 +1,32 @@
 .signup-background {
-    background-image: url('https://s3-prod.autonews.com/s3fs-public/SDV-Automotive.jpg'); /* Path to your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Full height of the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background-image: url('https://cdn.vectorstock.com/i/1000v/33/66/cars-auto-repair-doodles-vector-2493366.jpg');
+  /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  width: 900px;         /* Set the width of the card */
+  padding: 15px;        /* Adjust the padding inside the card */
+  margin: 10px auto;    /* Center the card on the page */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  border-radius: 8px;   /* Optional: Rounded corners */
+  background-color: #fff; /* Background color */
+  border: 1px solid #ccc;  /* Optional: Add a border */
+}
+
+.container {
+  width: 950px;       /* Control the width */
+  height: 800px;
+  max-width: 200%;    /* Prevents overflow beyond the screen size */
+  margin: 0 auto;     /* Center the form */
+  padding: 20px;      /* Add padding inside the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
