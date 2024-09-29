@@ -16,7 +16,7 @@ const SignUp = () => {
             let newInput={"name":input.name,"phone":input.phone,"email":input.email,"district":input.district,"password":input.password}
             
 
-            axios.post("",newInput).then(
+            axios.post("http://localhost:3030/signup",newInput).then(
                 (response)=>{
                     console.log(response.data)
 
