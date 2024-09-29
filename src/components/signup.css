@@ -27,6 +27,6 @@
   max-width: 200%;    /* Prevents overflow beyond the screen size */
   margin: 0 auto;     /* Center the form */
   padding: 20px;      /* Add padding inside the form */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
   border-radius: 8px; /* Optional: Add rounded corners */
 }
