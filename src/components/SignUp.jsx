@@ -23,7 +23,7 @@ const SignUp = () => {
                     if (response.data.status=="success") {
                         alert("Registered Successfully")
                     } else {
-                        alert("Email Id alraedy exist")
+                        alert("Email Id already exist")
                     }
                 }
             ).catch(
