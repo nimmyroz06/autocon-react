@@ -22,8 +22,10 @@ const SignUp = () => {
 
                     if (response.data.status=="success") {
                         alert("Registered Successfully")
+                        setInput({"name":"","phone":"","email":"","district":"","password":"","cnfpass":""})
                     } else {
                         alert("Email Id already exist")
+                        setInput({"name":"","phone":"","email":"","district":"","password":"","cnfpass":""})
                     }
                 }
             ).catch(
