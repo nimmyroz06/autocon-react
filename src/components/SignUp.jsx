@@ -12,6 +12,10 @@ const SignUp = () => {
     }
 
     const readValue=()=>{
+        if (!input.name || !input.phone || !input.email || !input.district || !input.password || !input.cnfpass) {
+            alert("All fields are required!");
+            return;
+        }
         if (input.password==input.cnfpass) {
             let newInput={"name":input.name,"phone":input.phone,"email":input.email,"district":input.district,"password":input.password}
             
@@ -94,7 +98,7 @@ const SignUp = () => {
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <center><h6>Already have an account?</h6>
-                                        <a href="" className="btn btn-primary">Back to Login</a></center>
+                                        <a href="/" className="btn btn-primary">Back to Login</a></center>
                                         
                                     </div>
                                 </div>
