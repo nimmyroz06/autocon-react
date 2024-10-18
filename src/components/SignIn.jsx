@@ -1,4 +1,5 @@
 import axios from 'axios'
+import './signin.css';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -60,23 +61,24 @@ const SignIn = () => {
 
 
     return (
-        <div>
+        <div className="signin-background">
 
-            <div className="container">
+            <div className="container1">
+            <div className='body'>
                 <div className="row">
 
                     <div className="card">
-                        <div className="card-body">
+                        <div className="card-body1">
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <div className="row g-3 ">
                                     <h1 align="center"><u>Login</u></h1>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Email Id</label>
-                                        <input type="text" className="form-control" name='email' value={input.email} onChange={inputHandler} />
+                                        <input type="text" placeholder="Enter Your Email-ID"className="form-control" name='email' value={input.email} onChange={inputHandler} />
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Password</label>
-                                        <input type="password" className="form-control" name='password' value={input.password} onChange={inputHandler} />
+                                        <input type="password" placeholder="Enter Your Password"className="form-control" name='password' value={input.password} onChange={inputHandler} />
                                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                             <br></br>
                                             <center><button onClick={readValue} className="btn btn-success">SignIn</button></center>
@@ -96,6 +98,7 @@ const SignIn = () => {
 
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     )
