@@ -4,40 +4,40 @@ import axios from 'axios';
 
 const SignUp = () => {
 
-    const[input,setInput]=new useState(
-        {"name":"","phone":"","email":"","district":"","password":"","cnfpass":""}
+    const [input, setInput] = new useState(
+        { "name": "", "phone": "", "email": "", "district": "", "password": "", "cnfpass": "" }
     )
-    const inputHandler=(event)=>{
-        setInput({...input,[event.target.name]:event.target.value})
+    const inputHandler = (event) => {
+        setInput({ ...input, [event.target.name]: event.target.value })
     }
 
-    const readValue=()=>{
+    const readValue = () => {
         if (!input.name || !input.phone || !input.email || !input.district || !input.password || !input.cnfpass) {
             alert("All fields are required!");
             return;
         }
-        if (input.password==input.cnfpass) {
-            let newInput={"name":input.name,"phone":input.phone,"email":input.email,"district":input.district,"password":input.password}
-            
+        if (input.password == input.cnfpass) {
+            let newInput = { "name": input.name, "phone": input.phone, "email": input.email, "district": input.district, "password": input.password }
 
-            axios.post("http://localhost:3030/signup",newInput).then(
-                (response)=>{
+
+            axios.post("http://localhost:3030/signup", newInput).then(
+                (response) => {
                     console.log(response.data)
 
-                    if (response.data.status=="success") {
+                    if (response.data.status == "success") {
                         alert("Registered Successfully")
-                        setInput({"name":"","phone":"","email":"","district":"","password":"","cnfpass":""})
+                        setInput({ "name": "", "phone": "", "email": "", "district": "", "password": "", "cnfpass": "" })
                     } else {
                         alert("Email Id already exist")
-                        setInput({"name":"","phone":"","email":"","district":"","password":"","cnfpass":""})
+                        setInput({ "name": "", "phone": "", "email": "", "district": "", "password": "", "cnfpass": "" })
                     }
                 }
             ).catch(
-                (error)=>{
+                (error) => {
                     console.log(error)
                 }
             )
-            
+
         } else {
             alert("Password and Confirm Password doesn't match")
         }
@@ -54,15 +54,15 @@ const SignUp = () => {
                                     <h1 align="center"><u>Create Your Account</u></h1>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Name</label>
-                                        <input type="text" className="form-control" name='name' value={input.name} onChange={inputHandler}/>
+                                        <input type="text" placeholder="Enter Your Name" className="form-control" name='name' value={input.name} onChange={inputHandler} />
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Phone Number</label>
-                                        <input type="number" className="form-control" name='phone' value={input.phone} onChange={inputHandler}/>
+                                        <input type="number" placeholder="Enter Your Phone Number" className="form-control" name='phone' value={input.phone} onChange={inputHandler} />
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Email Id</label>
-                                        <input type="text" className="form-control" name='email' value={input.email} onChange={inputHandler}/>
+                                        <input type="text" placeholder="Enter Your Email-ID" className="form-control" name='email' value={input.email} onChange={inputHandler} />
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">District</label>
@@ -86,11 +86,11 @@ const SignUp = () => {
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Password</label>
-                                        <input type="password" className="form-control" name='password' value={input.password} onChange={inputHandler}/>
+                                        <input type="password" placeholder="Enter a Password" className="form-control" name='password' value={input.password} onChange={inputHandler} />
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Confirm Password</label>
-                                        <input type="password" className="form-control" name='cnfpass' value={input.cnfpass} onChange={inputHandler}/>
+                                        <input type="password" placeholder="Re-Enter the Password" className="form-control" name='cnfpass' value={input.cnfpass} onChange={inputHandler} />
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <br></br>
@@ -98,18 +98,13 @@ const SignUp = () => {
                                     </div>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <center><h6>Already have an account?</h6>
-                                        <a href="/" className="btn btn-primary">Back to Login</a></center>
-                                        
+                                            <a href="/" className="btn btn-primary">Back to Login</a></center>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
             </div>
 
