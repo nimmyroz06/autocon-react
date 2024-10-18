@@ -20,11 +20,21 @@ const Home = () => {
                   <a href="#!" onClick={scrollToServices} class="btn btn-primary"><b>OUR SERVICES</b></a></center>
 
                 <div class="d-grid gap-2 col-6 mx-auto">
-                  <br></br><button type="button" class="btn btn-outline-info"><b>Transfer Of Ownership</b></button><br></br>
-                  <br></br><button type="button" class="btn btn-outline-info"><b>Change Of Address In RC</b></button><br></br>
-                  <br></br><button type="button" class="btn btn-outline-info"><b>Registration Renewal</b></button><br></br>
-                  <br></br><button type="button" class="btn btn-outline-info"><b>Phone Number Upadate In RC</b></button><br></br>
-                  <br></br><button type="button" class="btn btn-outline-info"><b>Duplicate RC Issuance</b></button><br></br>
+                  <br></br><button type="button" class="btn btn-outline-info"><b>Transfer Of Ownership</b></button>
+                  <br></br>
+
+                  <br></br><button type="button" class="btn btn-outline-info"><b>Change Of Address In RC</b></button>
+                  <br></br>
+
+                  <br></br><button type="button" class="btn btn-outline-info"><b>Registration Renewal</b></button>
+                  <br></br>
+
+                  <br></br><button type="button" class="btn btn-outline-info"><b>Phone Number Upadate In RC</b></button>
+                  <br></br>
+
+                  <br></br><button type="button" class="btn btn-outline-info"><b>Duplicate RC Issuance</b></button>
+                  <br></br>
+                  
                 </div>
               </div>
 
