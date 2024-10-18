@@ -1,10 +1,10 @@
 .signin-background {
-    background-image: url('https://cdn.vectorstock.com/i/1000v/33/66/cars-auto-repair-doodles-vector-2493366.jpg');
+    background-image: url('https://t3.ftcdn.net/jpg/04/71/65/50/360_F_471655063_XXGhvydORenAnII1DvQj7ZRjE7e0BYRj.jpg');
     /* Path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 110vh;
     /* Full height of the viewport */
     display: flex;
     justify-content: center;
