@@ -1,4 +1,5 @@
 import React from 'react'
+import './home.css'
 import { useRef } from 'react'
 const Home = () => {
   const servicesSectionRef = useRef(null);
@@ -7,7 +8,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className='background-div'>
       <div className="container">
         <div className="row">
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
