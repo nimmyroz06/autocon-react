@@ -5,6 +5,7 @@ import SignIn from './components/SignIn';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import OwnershipTrans from './components/OwnershipTrans';
+import Renewal from './components/Renewal';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path="/ownershiptrans" element={<OwnershipTrans />} />
+      <Route path="/renewal" element={<Renewal />} />
     </Routes>
     </BrowserRouter>
   );

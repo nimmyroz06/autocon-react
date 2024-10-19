@@ -22,7 +22,7 @@ const Home = () => {
 
                 <div class="d-grid gap-2 col-6 mx-auto">
                   <br></br>
-                  <Link to="/OwnershipTrans"><center>
+                  <Link to="/Renewal"><center>
                   <button type="button" class="btn btn-outline-info"><b>Registration Renewal</b>
                   </button></center>
                   </Link>
