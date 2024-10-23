@@ -29,7 +29,7 @@ const Home = () => {
                   <br></br>
 
                   <br></br>
-                  <Link to="/OwnershipTrans"><center>
+                  <Link to="/Duplicate"><center>
                   <button type="button" class="btn btn-outline-info"><b>Duplicate RC Issuance</b>
                   </button></center>
                   </Link>
@@ -43,14 +43,14 @@ const Home = () => {
                   <br></br>
 
                   <br></br>
-                  <Link to="/OwnershipTrans"><center>
+                  <Link to="/Address"><center>
                   <button type="button" class="btn btn-outline-info"><b>Change of Address in RC</b>
                   </button></center>
                   </Link>
                   <br></br>
 
                   <br></br>
-                  <Link to="/OwnershipTrans"><center>
+                  <Link to="/Phnumber"><center>
                   <button type="button" class="btn btn-outline-info"><b>Phone Number Updation in RC</b>
                   </button></center>
                   </Link>
