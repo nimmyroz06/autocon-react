@@ -11,12 +11,16 @@ import Address from './components/Address';
 import Phnumber from './components/Phnumber';
 import AdminLogin from './components/AdminLogin';
 import AdminView from './components/AdminView';
+import Navbar from './components/Navbar';
 
 
 function App() {
   return (
     <BrowserRouter>
+    <div>
+    <Navbar />
     <Routes>
+      
       <Route path='/' element={<SignIn/>}/>
       <Route path='/signup' element={<SignUp/>}/>
       <Route path='/adminlogin' element={<AdminLogin/>}/>
@@ -28,6 +32,7 @@ function App() {
       <Route path="/address" element={<Address />} />
       <Route path="/phnumber" element={<Phnumber />} />
     </Routes>
+    </div>
     </BrowserRouter>
   );
 }

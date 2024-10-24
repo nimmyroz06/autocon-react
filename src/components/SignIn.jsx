@@ -72,7 +72,7 @@ const SignIn = () => {
                         <div className="card-body1">
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <div className="row g-3 ">
-                                    <h1 align="center"><u>Login</u></h1>
+                                    <h1 align="center"><u>User Login</u></h1>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Email Id</label>
                                         <input type="text" placeholder="Enter Your Email-ID"className="form-control" name='email' value={input.email} onChange={inputHandler} />
