@@ -9,6 +9,8 @@ import Renewal from './components/Renewal';
 import Duplicate from './components/Duplicate';
 import Address from './components/Address';
 import Phnumber from './components/Phnumber';
+import AdminLogin from './components/AdminLogin';
+import AdminView from './components/AdminView';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
     <Routes>
       <Route path='/' element={<SignIn/>}/>
       <Route path='/signup' element={<SignUp/>}/>
+      <Route path='/adminlogin' element={<AdminLogin/>}/>
+      <Route path='/adminview' element={<AdminView/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path="/ownershiptrans" element={<OwnershipTrans />} />
       <Route path="/renewal" element={<Renewal />} />

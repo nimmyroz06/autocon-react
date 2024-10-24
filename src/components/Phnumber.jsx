@@ -96,14 +96,14 @@ const allFilesSelected = selectedFiles.every(file => file !== null)
             <center>
                 <br />
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <h1><b>REGISTRATION RENEWAL</b></h1>
+                    <h1><b>PHONE NUMBER UPDATION</b></h1>
                 </div>
             </center>
             <div className='container2'>
             <div className="card">
                 <div className="card-body2"><br></br>
                     <center>
-                        <h4 className="card-title"><u>Upload Documents For Registration Renewal</u></h4>
+                        <h4 className="card-title"><u>Upload Documents For Phone Number Updation in RC</u></h4>
                         <br />
                         <form onSubmit={handleSubmit}>
                             {selectedFiles.map((file, index) => (
