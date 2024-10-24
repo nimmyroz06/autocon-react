@@ -63,7 +63,7 @@ const Renewal = () => {
             setIsUploading(true);
             setMessages(['Uploading...']);
 
-            const response = await axios.post('http://localhost:3030/upload', formData, {
+            const response = await axios.post('http://localhost:3030/renewalupload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

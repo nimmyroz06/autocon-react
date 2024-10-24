@@ -3,7 +3,7 @@ import './signin.css';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const SignIn = () => {
+const AdminLogin = () => {
 
 
     const navigate = useNavigate()
@@ -23,7 +23,7 @@ const SignIn = () => {
         console.log(input)
 
 
-        axios.post("http://localhost:3030/signin", input).then(
+        axios.post("http://localhost:3030/adminlogin", input).then(
             (response) => {
                 console.log(response.data)
 
@@ -33,7 +33,7 @@ const SignIn = () => {
                 else if (response.data.status == "Invalid Email Id") {
                     alert("Incorrect Email Id")
                 }
-                else {
+                else if (response.data.status === "success"){
 
                     
 
@@ -48,12 +48,13 @@ const SignIn = () => {
                     sessionStorage.setItem("userid", userid)
                     sessionStorage.setItem("token", token)
 
-                    navigate("/home")
+                    navigate("/adminview")
                 }
             }
         ).catch(
             (error) => {
                 console.log(error)
+                alert("Invalid EmailId and Password.");
             }
         )
 
@@ -61,7 +62,6 @@ const SignIn = () => {
 
 
     return (
-        
         <div className="signin-background">
 
             <div className="container1">
@@ -72,7 +72,7 @@ const SignIn = () => {
                         <div className="card-body1">
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <div className="row g-3 ">
-                                    <h1 align="center"><u>Login</u></h1>
+                                    <h1 align="center"><u>Admin Login</u></h1>
                                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                         <label htmlFor="" className="form-label">Email Id</label>
                                         <input type="text" placeholder="Enter Your Email-ID"className="form-control" name='email' value={input.email} onChange={inputHandler} />
@@ -84,10 +84,6 @@ const SignIn = () => {
                                             <br></br>
                                             <center><button onClick={readValue} className="btn btn-success">SignIn</button></center>
                                         </div><br></br>
-                                        <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                            <center><a href="/signup" className="btn btn-secondary">New Users Click Here</a></center>
-
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -105,4 +101,4 @@ const SignIn = () => {
     )
 }
 
-export default SignIn
+export default AdminLogin
