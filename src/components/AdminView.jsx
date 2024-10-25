@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import './adminview.css';
 
 const AdminView = () => {
     const [uploadedFiles, setUploadedFiles] = useState([]);
@@ -53,14 +54,15 @@ const AdminView = () => {
                                 <td>{(file.fileSize / 1024).toFixed(2)}</td>
                                 <td>{new Date(file.uploadDate).toLocaleString()}</td>
                                 <td>
-                                    <a href={`http://localhost:3030/uploads/${file.fileName}`} download>
-                                        Download
-                                    </a>
-                                </td>
+    <a
+        href={`http://localhost:3030/uploads/${encodeURIComponent(file.fileName)}`}
+        download
+    >
+        Download
+    </a>
+</td>
+
                                 {/* Display local path with backslashes for reference */}
-                                <td>
-                                    <p>{`C:\\path\\to\\your\\uploads\\${file.fileName}`}</p>
-                                </td>
                             </tr>
                         ))}
                     </tbody>
