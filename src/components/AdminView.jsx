@@ -55,14 +55,12 @@ const AdminView = () => {
                                 <td>{new Date(file.uploadDate).toLocaleString()}</td>
                                 <td>
     <a
-        href={`http://localhost:3030/uploads/${encodeURIComponent(file.fileName)}`}
+        href={`http://localhost:3030/${file.filePath}`} // Now should work with forward slashes
         download
     >
         Download
     </a>
 </td>
-
-                                {/* Display local path with backslashes for reference */}
                             </tr>
                         ))}
                     </tbody>

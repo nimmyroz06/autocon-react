@@ -12,6 +12,8 @@ import Phnumber from './components/Phnumber';
 import AdminLogin from './components/AdminLogin';
 import AdminView from './components/AdminView';
 import Navbar from './components/Navbar';
+import Numberview from './components/Numberview';
+import Ownershipview from './components/Ownershipview';
 
 
 function App() {
@@ -31,6 +33,9 @@ function App() {
       <Route path="/duplicate" element={<Duplicate />} />
       <Route path="/address" element={<Address />} />
       <Route path="/phnumber" element={<Phnumber />} />
+      <Route path="/numberview" element={<Numberview />} />
+      <Route path="/ownershipview" element={<Ownershipview />} />
+      
     </Routes>
     </div>
     </BrowserRouter>
