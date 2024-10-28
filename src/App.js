@@ -11,7 +11,7 @@ import Address from './components/Address';
 import Phnumber from './components/Phnumber';
 import AdminLogin from './components/AdminLogin';
 import AdminView from './components/AdminView';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import Numberview from './components/Numberview';
 import Ownershipview from './components/Ownershipview';
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <BrowserRouter>
     <div>
-    <Navbar />
+    {/* <Navbar /> */}
     <Routes>
       
       <Route path='/' element={<SignIn/>}/>

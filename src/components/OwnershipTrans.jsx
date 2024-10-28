@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import './renewal.css';
+import Navbar from './Navbar';
 
 const OwnershipTrans = () => {
     const [selectedFiles, setSelectedFiles] = useState([null, null, null, null]);
@@ -94,6 +95,7 @@ const OwnershipTrans = () => {
     
     return (
         <div className='background-div'>
+            <Navbar/>
             <center>
                 <br />
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">

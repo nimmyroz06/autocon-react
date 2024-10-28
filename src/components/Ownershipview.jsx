@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './renewal.css'; // Adjust the path to your CSS file as necessary
+import Navbar from './Navbar';
 
 const Ownershipview = () => {
     const [transfers, setTransfers] = useState([]);
@@ -32,6 +33,7 @@ const Ownershipview = () => {
 
     return (
         <div className='background-div'>
+            <Navbar/>
             <center>
                 <h1><b>Ownership Transfer Records</b></h1>
             </center>

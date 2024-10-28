@@ -2,6 +2,7 @@ import axios from 'axios'
 import './signin.css';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Navbar from './Navbar';
 
 const SignIn = () => {
 
@@ -63,6 +64,7 @@ const SignIn = () => {
     return (
         
         <div className="signin-background">
+            <Navbar/>
 
             <div className="container1">
             <div className='body'>

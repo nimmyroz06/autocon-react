@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar';
 const Home = () => {
   const servicesSectionRef = useRef(null);
   const scrollToServices = () => {
@@ -9,7 +10,9 @@ const Home = () => {
   };
 
   return (
+
     <div className='background-div'>
+      <Navbar/>
       <div className="container">
         <div className="row">
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">

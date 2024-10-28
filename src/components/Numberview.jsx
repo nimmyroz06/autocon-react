@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 const Numberview = () => {
   const [uploads, setUploads] = useState([]);
@@ -32,6 +33,8 @@ const Numberview = () => {
   );
 
   return (
+    <div>
+      <Navbar/>
     <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
       <h2>All Phone Number Update Documents</h2>
       {uploads.length === 0 ? (
@@ -109,6 +112,7 @@ const Numberview = () => {
           </tbody>
         </table>
       )}
+    </div>
     </div>
   );
 };

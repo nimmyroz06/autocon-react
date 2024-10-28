@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './signup.css';
 import axios from 'axios';
+import Navbar from './Navbar';
 
 const SignUp = () => {
 
@@ -44,6 +45,7 @@ const SignUp = () => {
     }
     return (
         <div className="signup-background">
+            <Navbar/>
             <div className="container">
                 <div className="row">
 
